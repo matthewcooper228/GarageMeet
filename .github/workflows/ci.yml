@@ -18,13 +18,14 @@ jobs:
         uses: actions/setup-node@v3.2.0
       - name: npm setup
         uses: ng-easy/npm-setup@v1.7.2
-      - name: Angular Github Actions
+      #- name: Angular Github Actions
       # You may pin to the exact commit or the version.
       # uses: mayurrawte/github-angular-actions@babc38d81371a05fbe9b9b6d50d241efb96d4faf
-        uses: mayurrawte/github-angular-actions@latest
+      #  uses: mayurrawte/github-angular-actions@latest
       - name: WriteLcov
         run: |
           npm install
+          npm install @angular/cli
           npm install --save-dev @angular-devkit/build-angular
           npm install karma
           npm install karma-jasmine
