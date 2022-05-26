@@ -31,5 +31,5 @@ jobs:
           sudo apt install nodejs
           sudo apt install npm
           npm install @angular/cli
-          ng test --no-watch --code-coverage
+          npm test --no-watch --code-coverage
           
