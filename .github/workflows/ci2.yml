@@ -30,6 +30,6 @@ jobs:
         run: |
           sudo apt install nodejs
           sudo apt install npm
-          npm install @angular/cli
+          npm install -g @angular/cli
           ng test --no-watch --code-coverage
           
